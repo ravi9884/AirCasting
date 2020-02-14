@@ -1041,7 +1041,7 @@ viewMain model =
             [ div
                 [ classList
                     [ ( "filters", True )
-                    , ( "filters--collapsed", not model.areFiltersExpanded )
+                    , ( "filters--expanded", model.areFiltersExpanded )
                     ]
                 ]
                 [ viewSessionTypeNav model
